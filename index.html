@@ -2,11 +2,11 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Тренажёр неправильных глаголов</title>
     <style>
         /* ============================================================== */
-        /* ПЕРЕМЕННЫЕ ДЛЯ ТЕМ */
+        /* ПЕРЕМЕННЫЕ ДЛЯ ТЕМ (БЕЗ ИЗМЕНЕНИЙ) */
         /* ============================================================== */
         :root {
             --bg-body: linear-gradient(135deg, #1e3c72, #2a5298);
@@ -43,7 +43,7 @@
         }
 
         /* ============================================================== */
-        /* ТЁМНАЯ ТЕМА */
+        /* ТЁМНАЯ ТЕМА (БЕЗ ИЗМЕНЕНИЙ) */
         /* ============================================================== */
         [data-theme="dark"] {
             --bg-body: linear-gradient(135deg, #0d1117, #161b22);
@@ -80,7 +80,7 @@
         }
 
         /* ============================================================== */
-        /* ОБЩИЕ СТИЛИ */
+        /* ОБЩИЕ СТИЛИ (ДЛЯ ВСЕХ УСТРОЙСТВ) */
         /* ============================================================== */
         * {
             box-sizing: border-box;
@@ -184,7 +184,7 @@
         }
 
         /* ============================================================== */
-        /* ПЕРЕКЛЮЧАТЕЛЬ PART 1 / PART 2 — ФИКСИРОВАННЫЙ */
+        /* ПЕРЕКЛЮЧАТЕЛЬ PART 1 / PART 2 — ФИКСИРОВАННЫЙ (ДЛЯ КОМПА) */
         /* ============================================================== */
         .part-sidebar {
             display: flex;
@@ -529,12 +529,52 @@
         }
 
         /* ============================================================== */
-        /* АДАПТИВ */
+        /* АДАПТИВ ДЛЯ ТЕЛЕФОНОВ (ВСЁ, ЧТО МЕНЯЕТСЯ) */
         /* ============================================================== */
         @media (max-width: 768px) {
+            /* ---- Общие отступы ---- */
             .container {
-                padding: 25px 18px;
+                padding: 20px 15px;
+                border-radius: 20px;
             }
+            h1 {
+                font-size: 22px;
+            }
+            .subtitle {
+                font-size: 12px;
+                margin-bottom: 15px;
+            }
+
+            /* ---- Кнопка темы (больше и правее) ---- */
+            .theme-toggle {
+                top: 10px;
+                right: 15px;
+            }
+            .theme-toggle button {
+                padding: 8px 14px;
+                font-size: 14px;
+                border-radius: 30px;
+                gap: 6px;
+            }
+            .theme-toggle .icon {
+                font-size: 18px;
+            }
+
+            /* ---- Основная навигация (табы) ---- */
+            .main-nav {
+                gap: 6px;
+                margin-bottom: 15px;
+            }
+            .main-nav button {
+                padding: 10px 8px;
+                font-size: 13px;
+                min-width: 60px;
+                flex: 1 1 auto;
+                max-width: none;
+                border-radius: 40px;
+            }
+
+            /* ---- Part 1 / Part 2 (внутри контейнера, крупные кнопки) ---- */
             .part-sidebar {
                 position: static;
                 transform: none;
@@ -543,78 +583,150 @@
                 margin-bottom: 15px;
                 gap: 10px;
                 z-index: auto;
+                box-shadow: none;
             }
             .part-sidebar button {
                 writing-mode: horizontal-tb;
                 min-height: auto;
-                padding: 8px 18px;
-                font-size: 14px;
+                padding: 12px 20px;
+                font-size: 16px;
                 letter-spacing: 1px;
-                min-width: 80px;
-                box-shadow: none;
+                min-width: 100px;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                border-radius: 40px;
+                flex: 1;
             }
             .part-sidebar button.active::after {
                 display: none;
             }
             .part-sidebar button.active {
-                transform: scale(1.04);
+                transform: scale(1.02);
             }
-            .theme-toggle {
-                position: static;
-                display: flex;
-                justify-content: flex-end;
-                margin-bottom: 10px;
+
+            /* ---- Карточка ---- */
+            .card {
+                min-height: 160px;
+                padding: 20px 15px;
+                border-radius: 16px;
             }
-            .theme-toggle button {
-                padding: 4px 12px;
-                font-size: 12px;
+            .card .russian {
+                font-size: 32px;
             }
-            .main-nav button {
-                font-size: 12px;
-                padding: 8px 12px;
-                min-width: 60px;
-                max-width: none;
+            .card .english {
+                font-size: 22px;
+            }
+            .card .forms {
+                font-size: 20px;
+            }
+            .card .hint {
+                font-size: 13px;
+                margin-top: 10px;
+            }
+            .speak-btn {
+                width: 48px;
+                height: 48px;
+                font-size: 26px;
+                top: 8px;
+                right: 12px;
+            }
+            .card-nav button {
+                padding: 14px 20px;
+                font-size: 16px;
+                min-width: 70px;
+            }
+            .card-counter {
+                font-size: 14px;
+            }
+
+            /* ---- Тренажёр (поля и кнопки) ---- */
+            .stats {
+                padding: 10px 14px;
+                font-size: 14px;
+                gap: 4px;
+                border-radius: 12px;
+                margin-bottom: 18px;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+            .stats span {
+                font-size: 13px;
             }
             .question-word {
-                font-size: 30px;
+                font-size: 32px;
                 padding: 18px;
+                border-radius: 16px;
+                margin-bottom: 8px;
+            }
+            .question-hint {
+                font-size: 14px;
+                margin-bottom: 15px;
+            }
+            .form-group {
+                gap: 10px;
+                margin-bottom: 15px;
             }
             .form-group input {
-                font-size: 16px;
-                padding: 12px;
+                padding: 16px 16px;
+                font-size: 18px;
+                border-radius: 14px;
+                min-height: 54px;
+            }
+            .btn-row {
+                gap: 10px;
             }
             .btn-row button {
-                padding: 12px 20px;
-                font-size: 16px;
+                padding: 16px 20px;
+                font-size: 18px;
+                min-width: 100px;
+                border-radius: 40px;
+                flex: 1 1 45%;
             }
-            .stats {
+            .result-message {
+                font-size: 16px;
+                margin-top: 14px;
+                min-height: 24px;
+            }
+            .progress-text {
+                font-size: 13px;
+                margin-top: 12px;
+            }
+            .part-label {
+                font-size: 13px;
+                padding: 4px 14px;
+                margin-bottom: 12px;
+            }
+        }
+
+        /* Для совсем маленьких экранов (iPhone SE, 320px) */
+        @media (max-width: 400px) {
+            .main-nav button {
+                font-size: 11px;
+                padding: 8px 6px;
+                min-width: 50px;
+            }
+            .part-sidebar button {
                 font-size: 14px;
+                padding: 10px 12px;
+                min-width: 70px;
             }
             .card .russian {
                 font-size: 28px;
             }
-            .card .forms {
-                font-size: 18px;
+            .question-word {
+                font-size: 28px;
+                padding: 14px;
             }
-            .speak-btn {
-                width: 36px;
-                height: 36px;
-                font-size: 18px;
-                top: 8px;
-                right: 12px;
+            .form-group input {
+                font-size: 16px;
+                padding: 14px 14px;
+                min-height: 48px;
             }
-        }
-
-        @media (max-width: 400px) {
-            .main-nav button {
-                font-size: 10px;
-                padding: 6px 10px;
-                min-width: 50px;
+            .btn-row button {
+                font-size: 16px;
+                padding: 14px 16px;
             }
-            .part-sidebar button {
+            .stats span {
                 font-size: 12px;
-                padding: 6px 12px;
-                min-width: 60px;
             }
         }
     </style>
@@ -678,12 +790,10 @@
         <div class="question-hint" id="questionHint">Введите ответ</div>
 
         <div class="form-group">
-            <!-- ТРИ ПОЛЯ ДЛЯ РЕЖИМА "3 ФОРМЫ" -->
+            <input type="text" id="singleInput" placeholder="Введите ответ" autocomplete="off" class="hidden">
             <input type="text" id="infinitiveInput" placeholder="Infinitive (1 форма)" autocomplete="off" class="hidden">
             <input type="text" id="pastSimpleInput" placeholder="Past Simple (2 форма)" autocomplete="off" class="hidden">
             <input type="text" id="pastParticipleInput" placeholder="Past Participle (3 форма)" autocomplete="off" class="hidden">
-            <!-- ОДНО ПОЛЕ ДЛЯ РЕЖИМОВ "ПЕРЕВОД" И "2 ФОРМА" -->
-            <input type="text" id="singleInput" placeholder="Введите ответ" autocomplete="off" class="hidden">
         </div>
 
         <div class="btn-row">
@@ -697,7 +807,7 @@
 </div>
 
 <!-- ========================================================== -->
-<!-- PART 1 / PART 2 — ФИКСИРОВАННЫЕ -->
+<!-- PART 1 / PART 2 — ФИКСИРОВАННЫЕ (ДЛЯ КОМПА) -->
 <!-- ========================================================== -->
 <div class="part-sidebar" id="partSidebar">
     <button id="part1Btn" class="active">Part 1</button>
@@ -787,7 +897,7 @@
     applyTheme(currentTheme);
 
     // ==============================================================
-    // ОЗВУЧКА — ВСЕ 3 ФОРМЫ
+    // ОЗВУЧКА
     // ==============================================================
     const speakBtn = document.getElementById('speakBtn');
     let currentSpeakText = '';
@@ -960,7 +1070,6 @@
         currentVerb = pickRandomVerb();
         if (!currentVerb) return;
 
-        // Сбрасываем все поля
         singleInput.value = '';
         infinitiveInput.value = '';
         pastSimpleInput.value = '';
@@ -970,28 +1079,24 @@
         pastSimpleInput.className = '';
         pastParticipleInput.className = '';
         
-        // Скрываем все поля по умолчанию
         singleInput.classList.add('hidden');
         infinitiveInput.classList.add('hidden');
         pastSimpleInput.classList.add('hidden');
         pastParticipleInput.classList.add('hidden');
 
         if (currentMode === 'mode1') {
-            // Режим "Перевод" — одно поле
             questionWord.textContent = currentVerb.ru;
             questionHint.textContent = 'Введите 1 форму (Infinitive)';
             singleInput.classList.remove('hidden');
             singleInput.placeholder = 'Введите инфинитив';
             singleInput.focus();
         } else if (currentMode === 'mode2') {
-            // Режим "2 форма" — одно поле
             questionWord.textContent = currentVerb.infinitive;
             questionHint.textContent = 'Введите 2 форму (Past Simple)';
             singleInput.classList.remove('hidden');
             singleInput.placeholder = 'Введите Past Simple';
             singleInput.focus();
         } else if (currentMode === 'mode3') {
-            // Режим "3 формы" — ТРИ ПОЛЯ!
             questionWord.textContent = currentVerb.ru;
             questionHint.textContent = 'Введите все 3 формы';
             infinitiveInput.classList.remove('hidden');
@@ -1000,7 +1105,7 @@
             infinitiveInput.placeholder = 'Infinitive (1 форма)';
             pastSimpleInput.placeholder = 'Past Simple (2 форма)';
             pastParticipleInput.placeholder = 'Past Participle (3 форма)';
-            infinitiveInput.focus(); // КУРСОР НА ПЕРВОМ ПОЛЕ
+            infinitiveInput.focus();
         }
 
         resultMessage.textContent = '';
@@ -1078,7 +1183,6 @@
         nextBtn.disabled = false;
         updateStats();
 
-        // Автоматический переход после правильного ответа
         if (isCorrect) {
             if (remaining.length > 0) {
                 autoNextTimer = setTimeout(() => {
@@ -1174,7 +1278,6 @@
     // ==============================================================
     // КЛАВИШИ
     // ==============================================================
-    // Для режимов с одним полем
     singleInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === 'Return') {
             e.preventDefault();
@@ -1192,7 +1295,6 @@
         }
     });
 
-    // Для режима "3 формы" — три поля
     const threeInputs = [infinitiveInput, pastSimpleInput, pastParticipleInput];
     threeInputs.forEach((input, index) => {
         input.addEventListener('keydown', (e) => {
