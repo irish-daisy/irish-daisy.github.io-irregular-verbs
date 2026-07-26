@@ -8,75 +8,342 @@
         /* ============================================================== */
         /* ПЕРЕМЕННЫЕ ДЛЯ ТЕМ */
         /* ============================================================== */
+
+        /* ---- ЗЕЛЁНЫЙ (ЛЕСНОЙ) ---- */
         :root {
-            --bg-body: linear-gradient(135deg, #1e3c72, #2a5298);
+            --bg-body: linear-gradient(135deg, #2a5a3a, #3a7a4a);
             --bg-container: #ffffff;
-            --text-primary: #1e3c72;
-            --text-secondary: #666666;
-            --text-light: #888888;
-            --bg-card: #f8faff;
-            --border-card: #d0dfff;
-            --bg-stats: #f0f4ff;
+            --text-primary: #1a3a2a;
+            --text-secondary: #4a6a5a;
+            --text-light: #88a898;
+            --bg-card: #f4faf7;
+            --border-card: #b8d5c8;
+            --bg-stats: #eaf5ef;
             --bg-input: #ffffff;
-            --border-input: #dce4f0;
+            --border-input: #b8d5c8;
             --shadow: 0 20px 60px rgba(0,0,0,0.4);
-            --btn-primary: #2a5298;
-            --btn-primary-hover: #1e3c72;
-            --btn-secondary: #eef3f9;
-            --btn-secondary-hover: #dce4f0;
-            --correct: #27ae60;
-            --wrong: #e74c3c;
+            --btn-primary: #3a7a4a;
+            --btn-primary-hover: #2a6a3a;
+            --btn-secondary: #eaf5ef;
+            --btn-secondary-hover: #d0e8dc;
+            --correct: #1e8b4a;
+            --wrong: #c0392b;
             --card-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            --theme-btn-bg: #eef3f9;
-            --theme-btn-color: #1e3c72;
-            --theme-btn-border: #d0dfff;
-            --part-btn-bg: #2a5298;
+            --ctrl-btn-bg: #eaf5ef;
+            --ctrl-btn-color: #1a3a2a;
+            --ctrl-btn-border: #b8d5c8;
+            --ctrl-btn-hover: #d0e8dc;
+            --part-btn-bg: #3a7a4a;
             --part-btn-color: #ffffff;
-            --part-btn-border: #2a5298;
+            --part-btn-border: #3a7a4a;
             --part-btn-active-bg: #ffffff;
-            --part-btn-active-color: #2a5298;
-            --part-btn-active-shadow: 0 4px 15px rgba(42, 82, 152, 0.2);
-            --part-btn-hover: #dce4f0;
-            --speak-btn-bg: rgba(42, 82, 152, 0.1);
-            --speak-btn-hover: rgba(42, 82, 152, 0.2);
-            --speak-btn-color: #2a5298;
+            --part-btn-active-color: #1a3a2a;
+            --part-btn-active-shadow: 0 4px 15px rgba(58, 122, 74, 0.3);
+            --part-btn-hover: #c8e0d4;
+            --speak-btn-bg: rgba(58, 122, 74, 0.1);
+            --speak-btn-hover: rgba(58, 122, 74, 0.2);
+            --speak-btn-color: #3a7a4a;
+            --slot-border: #b8d5c8;
+            --slot-bg: #f4faf7;
+            --choice-btn-bg: #f4faf7;
+            --choice-btn-hover: #d0e8dc;
+            --choice-btn-border: #b8d5c8;
+            --table-header-bg: #eaf5ef;
+            --table-row-hover: #f0f8f4;
+            --table-border: #d0e0d8;
+            --nav-btn-bg: #3a7a4a;
+            --nav-btn-color: #ffffff;
+            --nav-btn-border: #3a7a4a;
+            --nav-btn-active-bg: #ffffff;
+            --nav-btn-active-color: #1a3a2a;
+            --nav-btn-active-shadow: 0 4px 15px rgba(58, 122, 74, 0.3);
+            --nav-btn-hover: #c8e0d4;
+            --tab-btn-bg: transparent;
+            --tab-btn-color: #4a6a5a;
+            --tab-btn-border: transparent;
+            --tab-btn-active-bg: #eaf5ef;
+            --tab-btn-active-color: #1a3a2a;
+            --tab-btn-active-border: #3a7a4a;
+            --palette-btn-bg: #eaf5ef;
+            --palette-btn-color: #1a3a2a;
+            --palette-btn-border: #b8d5c8;
+            --palette-btn-hover: #d0e8dc;
+            --dot-color: #3a7a4a;
+        }
+
+        /* ---- СИНИЙ (ВАСИЛЬКОВЫЙ) ---- */
+        [data-theme="blue"] {
+            --bg-body: linear-gradient(135deg, #3a5a7a, #4a7a9a);
+            --bg-container: #ffffff;
+            --text-primary: #1a2a4a;
+            --text-secondary: #4a6a8a;
+            --text-light: #88aac8;
+            --bg-card: #f0f6fa;
+            --border-card: #c0d8e8;
+            --bg-stats: #e3f0f7;
+            --bg-input: #ffffff;
+            --border-input: #c0d8e8;
+            --shadow: 0 20px 60px rgba(0,0,0,0.4);
+            --btn-primary: #4a7a9a;
+            --btn-primary-hover: #3a6a8a;
+            --btn-secondary: #e3f0f7;
+            --btn-secondary-hover: #d0e4f0;
+            --correct: #2a6a8a;
+            --wrong: #c0392b;
+            --card-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            --ctrl-btn-bg: #e3f0f7;
+            --ctrl-btn-color: #1a2a4a;
+            --ctrl-btn-border: #c0d8e8;
+            --ctrl-btn-hover: #d0e4f0;
+            --part-btn-bg: #4a7a9a;
+            --part-btn-color: #ffffff;
+            --part-btn-border: #4a7a9a;
+            --part-btn-active-bg: #ffffff;
+            --part-btn-active-color: #1a2a4a;
+            --part-btn-active-shadow: 0 4px 15px rgba(74, 122, 154, 0.3);
+            --part-btn-hover: #d0e4f0;
+            --speak-btn-bg: rgba(74, 122, 154, 0.1);
+            --speak-btn-hover: rgba(74, 122, 154, 0.2);
+            --speak-btn-color: #4a7a9a;
+            --slot-border: #c0d8e8;
+            --slot-bg: #f0f6fa;
+            --choice-btn-bg: #f0f6fa;
+            --choice-btn-hover: #d0e4f0;
+            --choice-btn-border: #c0d8e8;
+            --table-header-bg: #e3f0f7;
+            --table-row-hover: #f0f6fa;
+            --table-border: #d0e0e8;
+            --nav-btn-bg: #4a7a9a;
+            --nav-btn-color: #ffffff;
+            --nav-btn-border: #4a7a9a;
+            --nav-btn-active-bg: #ffffff;
+            --nav-btn-active-color: #1a2a4a;
+            --nav-btn-active-shadow: 0 4px 15px rgba(74, 122, 154, 0.3);
+            --nav-btn-hover: #d0e4f0;
+            --tab-btn-bg: transparent;
+            --tab-btn-color: #4a6a8a;
+            --tab-btn-border: transparent;
+            --tab-btn-active-bg: #e3f0f7;
+            --tab-btn-active-color: #1a2a4a;
+            --tab-btn-active-border: #4a7a9a;
+            --palette-btn-bg: #e3f0f7;
+            --palette-btn-color: #1a2a4a;
+            --palette-btn-border: #c0d8e8;
+            --palette-btn-hover: #d0e4f0;
+            --dot-color: #4a7a9a;
+        }
+
+        /* ---- ФИОЛЕТОВЫЙ (АМЕТИСТ) ---- */
+        [data-theme="purple"] {
+            --bg-body: linear-gradient(135deg, #4a3a7a, #5a4a8a);
+            --bg-container: #ffffff;
+            --text-primary: #2a1a4a;
+            --text-secondary: #6a4a7a;
+            --text-light: #a888b8;
+            --bg-card: #f6f0f8;
+            --border-card: #dcc8ec;
+            --bg-stats: #f0e8f5;
+            --bg-input: #ffffff;
+            --border-input: #dcc8ec;
+            --shadow: 0 20px 60px rgba(0,0,0,0.4);
+            --btn-primary: #5a4a8a;
+            --btn-primary-hover: #4a3a7a;
+            --btn-secondary: #f0e8f5;
+            --btn-secondary-hover: #e8d8f0;
+            --correct: #5a3a7a;
+            --wrong: #c0392b;
+            --card-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            --ctrl-btn-bg: #f0e8f5;
+            --ctrl-btn-color: #2a1a4a;
+            --ctrl-btn-border: #dcc8ec;
+            --ctrl-btn-hover: #e8d8f0;
+            --part-btn-bg: #5a4a8a;
+            --part-btn-color: #ffffff;
+            --part-btn-border: #5a4a8a;
+            --part-btn-active-bg: #ffffff;
+            --part-btn-active-color: #2a1a4a;
+            --part-btn-active-shadow: 0 4px 15px rgba(90, 74, 138, 0.3);
+            --part-btn-hover: #e8d8f0;
+            --speak-btn-bg: rgba(90, 74, 138, 0.1);
+            --speak-btn-hover: rgba(90, 74, 138, 0.2);
+            --speak-btn-color: #5a4a8a;
+            --slot-border: #dcc8ec;
+            --slot-bg: #f6f0f8;
+            --choice-btn-bg: #f6f0f8;
+            --choice-btn-hover: #e8d8f0;
+            --choice-btn-border: #dcc8ec;
+            --table-header-bg: #f0e8f5;
+            --table-row-hover: #f6f0f8;
+            --table-border: #d8d0e0;
+            --nav-btn-bg: #5a4a8a;
+            --nav-btn-color: #ffffff;
+            --nav-btn-border: #5a4a8a;
+            --nav-btn-active-bg: #ffffff;
+            --nav-btn-active-color: #2a1a4a;
+            --nav-btn-active-shadow: 0 4px 15px rgba(90, 74, 138, 0.3);
+            --nav-btn-hover: #e8d8f0;
+            --tab-btn-bg: transparent;
+            --tab-btn-color: #6a4a7a;
+            --tab-btn-border: transparent;
+            --tab-btn-active-bg: #f0e8f5;
+            --tab-btn-active-color: #2a1a4a;
+            --tab-btn-active-border: #5a4a8a;
+            --palette-btn-bg: #f0e8f5;
+            --palette-btn-color: #2a1a4a;
+            --palette-btn-border: #dcc8ec;
+            --palette-btn-hover: #e8d8f0;
+            --dot-color: #5a4a8a;
+        }
+
+        /* ---- БИРЮЗОВЫЙ (АКВАМАРИН) ---- */
+        [data-theme="teal"] {
+            --bg-body: linear-gradient(135deg, #2a5a5a, #3a7a7a);
+            --bg-container: #ffffff;
+            --text-primary: #0a2a2a;
+            --text-secondary: #3a6a6a;
+            --text-light: #6a9a9a;
+            --bg-card: #eef6f6;
+            --border-card: #bcd8d8;
+            --bg-stats: #e0f0f0;
+            --bg-input: #ffffff;
+            --border-input: #bcd8d8;
+            --shadow: 0 20px 60px rgba(0,0,0,0.4);
+            --btn-primary: #3a7a7a;
+            --btn-primary-hover: #2a6a6a;
+            --btn-secondary: #e0f0f0;
+            --btn-secondary-hover: #d0e8e8;
+            --correct: #2a5a5a;
+            --wrong: #c0392b;
+            --card-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            --ctrl-btn-bg: #e0f0f0;
+            --ctrl-btn-color: #0a2a2a;
+            --ctrl-btn-border: #bcd8d8;
+            --ctrl-btn-hover: #d0e8e8;
+            --part-btn-bg: #3a7a7a;
+            --part-btn-color: #ffffff;
+            --part-btn-border: #3a7a7a;
+            --part-btn-active-bg: #ffffff;
+            --part-btn-active-color: #0a2a2a;
+            --part-btn-active-shadow: 0 4px 15px rgba(58, 122, 122, 0.3);
+            --part-btn-hover: #d0e8e8;
+            --speak-btn-bg: rgba(58, 122, 122, 0.1);
+            --speak-btn-hover: rgba(58, 122, 122, 0.2);
+            --speak-btn-color: #3a7a7a;
+            --slot-border: #bcd8d8;
+            --slot-bg: #eef6f6;
+            --choice-btn-bg: #eef6f6;
+            --choice-btn-hover: #d0e8e8;
+            --choice-btn-border: #bcd8d8;
+            --table-header-bg: #e0f0f0;
+            --table-row-hover: #eef6f6;
+            --table-border: #c8d8d8;
+            --nav-btn-bg: #3a7a7a;
+            --nav-btn-color: #ffffff;
+            --nav-btn-border: #3a7a7a;
+            --nav-btn-active-bg: #ffffff;
+            --nav-btn-active-color: #0a2a2a;
+            --nav-btn-active-shadow: 0 4px 15px rgba(58, 122, 122, 0.3);
+            --nav-btn-hover: #d0e8e8;
+            --tab-btn-bg: transparent;
+            --tab-btn-color: #3a6a6a;
+            --tab-btn-border: transparent;
+            --tab-btn-active-bg: #e0f0f0;
+            --tab-btn-active-color: #0a2a2a;
+            --tab-btn-active-border: #3a7a7a;
+            --palette-btn-bg: #e0f0f0;
+            --palette-btn-color: #0a2a2a;
+            --palette-btn-border: #bcd8d8;
+            --palette-btn-hover: #d0e8e8;
+            --dot-color: #3a7a7a;
         }
 
         /* ============================================================== */
-        /* ТЁМНАЯ ТЕМА */
+        /* ПАЛЕТРА ТЕМ */
         /* ============================================================== */
-        [data-theme="dark"] {
-            --bg-body: linear-gradient(135deg, #0d1117, #161b22);
-            --bg-container: #1c2333;
-            --text-primary: #e6edf3;
-            --text-secondary: #8b949e;
-            --text-light: #6e7681;
-            --bg-card: #2d333b;
-            --border-card: #3d444d;
-            --bg-stats: #2d333b;
-            --bg-input: #2d333b;
-            --border-input: #3d444d;
-            --shadow: 0 20px 60px rgba(0,0,0,0.7);
-            --btn-primary: #58a6ff;
-            --btn-primary-hover: #79c0ff;
-            --btn-secondary: #2d333b;
-            --btn-secondary-hover: #3d444d;
-            --correct: #3fb950;
-            --wrong: #f85149;
-            --card-shadow: 0 4px 10px rgba(0,0,0,0.4);
-            --theme-btn-bg: rgba(255,255,255,0.1);
-            --theme-btn-color: #e6edf3;
-            --theme-btn-border: rgba(255,255,255,0.15);
-            --part-btn-bg: #2d333b;
-            --part-btn-color: #8b949e;
-            --part-btn-border: #58a6ff;
-            --part-btn-active-bg: #58a6ff;
-            --part-btn-active-color: #0d1117;
-            --part-btn-active-shadow: 0 4px 15px rgba(88, 166, 255, 0.4);
-            --part-btn-hover: #3d444d;
-            --speak-btn-bg: rgba(88, 166, 255, 0.15);
-            --speak-btn-hover: rgba(88, 166, 255, 0.25);
-            --speak-btn-color: #58a6ff;
+        .palette-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        .palette-btn {
+            padding: 6px 10px;
+            font-size: 16px;
+            border: 1px solid var(--ctrl-btn-border);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            background: var(--ctrl-btn-bg);
+            color: var(--ctrl-btn-color);
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            line-height: 1;
+        }
+        .palette-btn:hover {
+            transform: scale(1.05);
+            background: var(--ctrl-btn-hover);
+        }
+
+        .palette-menu {
+            display: none;
+            position: absolute;
+            top: 110%;
+            right: 0;
+            background: var(--bg-container);
+            border-radius: 16px;
+            padding: 10px 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+            z-index: 1001;
+            min-width: 150px;
+            border: 1px solid var(--border-card);
+        }
+        .palette-menu.open {
+            display: block;
+        }
+        .palette-menu .theme-option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 5px 10px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.2s;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--text-primary);
+            border: none;
+            background: transparent;
+            width: 100%;
+            text-align: left;
+        }
+        .palette-menu .theme-option:hover {
+            background: var(--bg-stats);
+        }
+        .palette-menu .theme-option .dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,0.06);
+            flex-shrink: 0;
+        }
+        .palette-menu .theme-option .check {
+            margin-left: auto;
+            opacity: 0;
+            transition: 0.2s;
+        }
+        .palette-menu .theme-option.active .check {
+            opacity: 1;
+        }
+
+        /* ============================================================== */
+        /* КНОПКИ УПРАВЛЕНИЯ */
+        /* ============================================================== */
+        .controls {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            display: flex;
+            gap: 6px;
+            align-items: center;
         }
 
         /* ============================================================== */
@@ -101,7 +368,7 @@
             background: var(--bg-container);
             border-radius: 30px;
             padding: 35px 35px;
-            max-width: 700px;
+            max-width: 800px;
             width: 100%;
             box-shadow: var(--shadow);
             text-align: center;
@@ -122,71 +389,9 @@
         }
 
         /* ============================================================== */
-        /* КНОПКА ПЕРЕКЛЮЧЕНИЯ ТЕМЫ */
+        /* БОКОВАЯ ПАНЕЛЬ: СЛОВАРЬ / ТРЕНИРОВКА */
         /* ============================================================== */
-        .theme-toggle {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-        }
-        .theme-toggle button {
-            padding: 6px 14px;
-            font-size: 13px;
-            font-weight: 600;
-            border: 1px solid var(--theme-btn-border);
-            border-radius: 30px;
-            cursor: pointer;
-            transition: 0.3s;
-            background: var(--theme-btn-bg);
-            color: var(--theme-btn-color);
-            display: flex;
-            align-items: center;
-            gap: 5px;
-        }
-        .theme-toggle button:hover {
-            transform: scale(1.05);
-            opacity: 0.85;
-        }
-        .theme-toggle .icon {
-            font-size: 15px;
-        }
-
-        /* ============================================================== */
-        /* ОСНОВНАЯ НАВИГАЦИЯ (4 КНОПКИ) */
-        /* ============================================================== */
-        .main-nav {
-            display: flex;
-            gap: 8px;
-            margin-bottom: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-        .main-nav button {
-            padding: 10px 16px;
-            font-size: 14px;
-            font-weight: 600;
-            border: 2px solid var(--btn-primary);
-            border-radius: 50px;
-            cursor: pointer;
-            transition: 0.3s;
-            background: var(--bg-container);
-            color: var(--btn-primary);
-            flex: 1;
-            min-width: 80px;
-            max-width: 140px;
-        }
-        .main-nav button.active {
-            background: var(--btn-primary);
-            color: var(--bg-container);
-        }
-        .main-nav button:hover {
-            transform: scale(1.04);
-        }
-
-        /* ============================================================== */
-        /* БОКОВАЯ ПАНЕЛЬ PART 1/2 (ТОЛЬКО ДЛЯ КОМПА) */
-        /* ============================================================== */
-        .part-sidebar {
+        .nav-sidebar {
             display: flex;
             flex-direction: column;
             gap: 8px;
@@ -196,16 +401,16 @@
             transform: translateY(-50%);
             z-index: 1000;
         }
-        .part-sidebar button {
+        .nav-sidebar button {
             padding: 10px 12px;
             font-size: 13px;
             font-weight: 700;
-            border: 2px solid var(--part-btn-border);
+            border: 2px solid var(--nav-btn-border);
             border-radius: 12px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background: var(--part-btn-bg);
-            color: var(--part-btn-color);
+            background: var(--nav-btn-bg);
+            color: var(--nav-btn-color);
             writing-mode: vertical-rl;
             letter-spacing: 2px;
             min-height: 70px;
@@ -213,68 +418,132 @@
             align-items: center;
             justify-content: center;
             position: relative;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
         }
-        .part-sidebar button:hover {
+        .nav-sidebar button:hover {
             transform: scale(1.05);
-            background: var(--part-btn-hover);
+            background: var(--nav-btn-hover);
         }
-        .part-sidebar button.active {
-            background: var(--part-btn-active-bg);
-            color: var(--part-btn-active-color);
-            box-shadow: var(--part-btn-active-shadow);
-            border-color: var(--part-btn-active-bg);
+        .nav-sidebar button.active {
+            background: var(--nav-btn-active-bg);
+            color: var(--nav-btn-active-color);
+            box-shadow: var(--nav-btn-active-shadow);
+            border-color: var(--nav-btn-active-bg);
             transform: scale(1.06);
         }
-        .part-sidebar button.active::after {
+        .nav-sidebar button.active::after {
             content: '';
             position: absolute;
             left: -4px;
             top: 20%;
             width: 4px;
             height: 60%;
-            background: var(--part-btn-active-color);
+            background: var(--nav-btn-active-color);
             border-radius: 4px;
             opacity: 0.6;
         }
-        [data-theme="dark"] .part-sidebar button.active::after {
-            opacity: 0.8;
-        }
 
         /* ============================================================== */
-        /* МОБИЛЬНАЯ ПАНЕЛЬ PART 1/2 (НАД КОНТЕЙНЕРОМ) */
+        /* МОБИЛЬНАЯ ПАНЕЛЬ: СЛОВАРЬ / ТРЕНИРОВКА */
         /* ============================================================== */
-        .part-mobile {
+        .nav-mobile {
             display: none;
-            gap: 10px;
+            gap: 8px;
             justify-content: center;
             margin-bottom: 12px;
             width: 100%;
             max-width: 700px;
+            flex-wrap: wrap;
         }
-        .part-mobile button {
-            padding: 10px 20px;
-            font-size: 16px;
+        .nav-mobile button {
+            padding: 10px 16px;
+            font-size: 15px;
             font-weight: 700;
-            border: 2px solid var(--part-btn-border);
+            border: 2px solid var(--nav-btn-border);
             border-radius: 30px;
             cursor: pointer;
             transition: all 0.3s ease;
-            background: var(--part-btn-bg);
-            color: var(--part-btn-color);
+            background: var(--nav-btn-bg);
+            color: var(--nav-btn-color);
             flex: 1;
-            min-width: 80px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            min-width: 70px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
         }
-        .part-mobile button:hover {
+        .nav-mobile button:hover {
             transform: scale(1.03);
-            background: var(--part-btn-hover);
+            background: var(--nav-btn-hover);
         }
-        .part-mobile button.active {
-            background: var(--part-btn-active-bg);
-            color: var(--part-btn-active-color);
-            box-shadow: var(--part-btn-active-shadow);
-            border-color: var(--part-btn-active-bg);
+        .nav-mobile button.active {
+            background: var(--nav-btn-active-bg);
+            color: var(--nav-btn-active-color);
+            box-shadow: var(--nav-btn-active-shadow);
+            border-color: var(--nav-btn-active-bg);
+        }
+
+        /* ============================================================== */
+        /* ВКЛАДКИ: ЧАСТЬ 1 / ЧАСТЬ 2 */
+        /* ============================================================== */
+        .part-tabs {
+            display: flex;
+            gap: 4px;
+            margin-bottom: 16px;
+            justify-content: center;
+            border-bottom: 2px solid var(--table-border);
+            padding-bottom: 4px;
+        }
+        .part-tabs button {
+            padding: 10px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            border: none;
+            background: var(--tab-btn-bg);
+            color: var(--tab-btn-color);
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 30px 30px 0 0;
+            border-bottom: 3px solid transparent;
+        }
+        .part-tabs button:hover {
+            color: var(--text-primary);
+            background: var(--tab-btn-active-bg);
+        }
+        .part-tabs button.active {
+            color: var(--tab-btn-active-color);
+            background: var(--tab-btn-active-bg);
+            border-bottom-color: var(--tab-btn-active-border);
+            font-weight: 700;
+        }
+
+        /* ============================================================== */
+        /* РЕЖИМЫ */
+        /* ============================================================== */
+        .mode-buttons {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 12px 0 20px;
+        }
+        .mode-buttons button {
+            padding: 8px 10px;
+            font-size: 12px;
+            font-weight: 600;
+            border: 2px solid var(--btn-primary);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            background: var(--bg-container);
+            color: var(--btn-primary);
+            flex: 1;
+            min-width: 50px;
+            max-width: 100px;
+        }
+        .mode-buttons button.active {
+            background: var(--btn-primary);
+            color: var(--bg-container);
+        }
+        .mode-buttons button:hover {
+            transform: scale(1.04);
         }
 
         /* ============================================================== */
@@ -284,6 +553,12 @@
             display: none;
         }
         .section.active {
+            display: block;
+        }
+        .sub-section {
+            display: none;
+        }
+        .sub-section.active {
             display: block;
         }
 
@@ -414,7 +689,119 @@
         }
 
         /* ============================================================== */
-        /* ТРЕНАЖЁР */
+        /* РЕЖИМ "ПОРЯДОК" */
+        /* ============================================================== */
+        .match-instruction {
+            font-size: 15px;
+            color: var(--text-secondary);
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .slots-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            min-height: 60px;
+        }
+        .slot {
+            flex: 1 1 0;
+            min-width: 80px;
+            max-width: 200px;
+            min-height: 50px;
+            border: 2px dashed var(--slot-border);
+            border-radius: 14px;
+            background: var(--slot-bg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--text-primary);
+            font-family: 'Courier New', monospace;
+            transition: all 0.3s ease;
+            padding: 5px 10px;
+            word-break: break-word;
+            text-align: center;
+            line-height: 1.3;
+        }
+        .slot.filled {
+            border-style: solid;
+            border-color: var(--correct);
+            background: rgba(46, 204, 113, 0.12);
+            color: var(--correct);
+        }
+        .slot .order-num {
+            font-size: 12px;
+            font-weight: 400;
+            color: var(--text-light);
+            margin-right: 4px;
+            flex-shrink: 0;
+        }
+        .slot .slot-text {
+            display: inline;
+            word-break: break-word;
+        }
+
+        .choices-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        .choice-btn {
+            flex: 1 1 0;
+            min-width: 80px;
+            max-width: 200px;
+            min-height: 50px;
+            padding: 5px 10px;
+            font-size: 18px;
+            font-weight: 600;
+            border: 2px solid var(--choice-btn-border);
+            border-radius: 14px;
+            cursor: pointer;
+            background: var(--choice-btn-bg);
+            color: var(--text-primary);
+            font-family: 'Courier New', monospace;
+            transition: all 0.2s ease;
+            word-break: break-word;
+            text-align: center;
+            line-height: 1.3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .choice-btn:hover:not(:disabled) {
+            background: var(--choice-btn-hover);
+            transform: scale(1.03);
+        }
+        .choice-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: none;
+        }
+        .choice-btn.correct-choice {
+            background: var(--correct) !important;
+            color: white !important;
+            border-color: var(--correct) !important;
+        }
+        .choice-btn.wrong-choice {
+            background: var(--wrong) !important;
+            color: white !important;
+            border-color: var(--wrong) !important;
+            animation: shake 0.3s ease;
+        }
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-8px); }
+            75% { transform: translateX(8px); }
+        }
+
+        /* ============================================================== */
+        /* РЕЖИМЫ: ПЕРЕВОД, 2-я, 3-я, ВСЕ ФОРМЫ */
         /* ============================================================== */
         .stats {
             display: flex;
@@ -435,6 +822,38 @@
         .stats .right { color: var(--correct); }
         .stats .wrong { color: var(--wrong); }
 
+        .question-block {
+            background: var(--bg-card);
+            border: 2px dashed var(--border-card);
+            border-radius: 20px;
+            padding: 24px 20px;
+            margin-bottom: 15px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease, border 0.3s ease;
+        }
+        .question-block .given {
+            font-size: 30px;
+            color: var(--text-primary);
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+        .question-block .given .highlight {
+            color: var(--btn-primary);
+            transition: color 0.3s ease;
+        }
+        .question-block .finished {
+            font-size: 26px;
+            color: var(--text-primary);
+            font-weight: 700;
+            font-family: 'Courier New', monospace;
+            transition: color 0.3s ease;
+        }
+
         .question-word {
             font-size: 42px;
             font-weight: 700;
@@ -450,6 +869,7 @@
             font-size: 16px;
             color: var(--text-secondary);
             margin-bottom: 20px;
+            transition: color 0.3s ease;
         }
 
         .form-group {
@@ -471,7 +891,7 @@
         }
         .form-group input:focus {
             border-color: var(--btn-primary);
-            box-shadow: 0 0 0 4px rgba(42, 82, 152, 0.15);
+            box-shadow: 0 0 0 4px rgba(90, 154, 106, 0.2);
         }
         .form-group input.correct {
             border-color: var(--correct);
@@ -488,17 +908,11 @@
         }
         .form-group input.correct-light {
             border-color: var(--correct);
-            background: rgba(39, 174, 96, 0.15);
+            background: rgba(46, 204, 113, 0.12);
         }
         .form-group input.wrong-light {
             border-color: var(--wrong);
-            background: rgba(231, 76, 60, 0.15);
-        }
-        [data-theme="dark"] .form-group input.correct-light {
-            background: rgba(63, 185, 80, 0.2);
-        }
-        [data-theme="dark"] .form-group input.wrong-light {
-            background: rgba(248, 81, 73, 0.2);
+            background: rgba(231, 76, 60, 0.12);
         }
 
         .btn-row {
@@ -565,31 +979,130 @@
         }
 
         /* ============================================================== */
-        /* АДАПТИВ ДЛЯ ТЕЛЕФОНОВ */
+        /* DICTIONARY */
+        /* ============================================================== */
+        .dict-controls {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .dict-controls input {
+            padding: 10px 16px;
+            font-size: 16px;
+            border: 2px solid var(--border-input);
+            border-radius: 30px;
+            outline: none;
+            background: var(--bg-input);
+            color: var(--text-primary);
+            flex: 1;
+            min-width: 180px;
+            max-width: 300px;
+        }
+        .dict-controls input:focus {
+            border-color: var(--btn-primary);
+            box-shadow: 0 0 0 4px rgba(90, 154, 106, 0.2);
+        }
+        .dict-controls .filter-buttons {
+            display: flex;
+            gap: 4px;
+            flex-wrap: wrap;
+        }
+        .dict-controls .filter-buttons button {
+            padding: 6px 12px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 2px solid var(--btn-primary);
+            border-radius: 30px;
+            cursor: pointer;
+            transition: 0.3s;
+            background: var(--bg-container);
+            color: var(--btn-primary);
+        }
+        .dict-controls .filter-buttons button.active {
+            background: var(--btn-primary);
+            color: var(--bg-container);
+        }
+        .dict-controls .filter-buttons button:hover {
+            transform: scale(1.04);
+        }
+
+        .dict-table-wrapper {
+            overflow-x: auto;
+            margin-top: 10px;
+            border-radius: 16px;
+            border: 1px solid var(--table-border);
+        }
+        .dict-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 15px;
+            min-width: 400px;
+        }
+        .dict-table th {
+            background: var(--table-header-bg);
+            color: var(--text-primary);
+            padding: 12px 16px;
+            text-align: left;
+            font-weight: 700;
+            border-bottom: 2px solid var(--table-border);
+            position: sticky;
+            top: 0;
+            z-index: 2;
+        }
+        .dict-table td {
+            padding: 10px 16px;
+            border-bottom: 1px solid var(--table-border);
+            color: var(--text-primary);
+            text-align: left;
+        }
+        .dict-table tbody tr:hover {
+            background: var(--table-row-hover);
+        }
+        .dict-table .no-results {
+            text-align: center;
+            padding: 30px;
+            color: var(--text-light);
+            font-size: 18px;
+        }
+        .dict-table .verb-infinitive {
+            font-weight: 600;
+            color: var(--btn-primary);
+        }
+        .dict-table .verb-past,
+        .dict-table .verb-participle {
+            font-family: 'Courier New', monospace;
+        }
+        .dict-table .verb-translation {
+            color: var(--text-secondary);
+        }
+        .dict-count {
+            margin-top: 12px;
+            font-size: 14px;
+            color: var(--text-light);
+        }
+
+        /* ============================================================== */
+        /* АДАПТИВ */
         /* ============================================================== */
         @media (max-width: 768px) {
             body {
                 flex-direction: column;
                 padding: 12px;
             }
-
-            /* ---- Мобильная панель Part 1/2 (НАД контейнером) ---- */
-            .part-mobile {
+            .nav-mobile {
                 display: flex;
             }
-
-            /* ---- Боковая панель скрыта ---- */
-            .part-sidebar {
+            .nav-sidebar {
                 display: none;
             }
-
-            /* ---- Контейнер с отступом сверху ---- */
             .container {
                 padding: 16px 14px;
                 border-radius: 20px;
                 margin-top: 0;
             }
-
             h1 {
                 font-size: 22px;
                 margin-top: 6px;
@@ -598,34 +1111,38 @@
                 font-size: 12px;
                 margin-bottom: 12px;
             }
-
-            .theme-toggle {
-                top: 10px;
-                right: 12px;
+            .controls {
+                position: static;
+                display: flex;
+                justify-content: flex-end;
+                margin-bottom: 10px;
+                gap: 6px;
             }
-            .theme-toggle button {
-                padding: 6px 12px;
-                font-size: 13px;
-                border-radius: 30px;
-                gap: 4px;
+            .palette-btn {
+                padding: 4px 8px;
+                font-size: 14px;
             }
-            .theme-toggle .icon {
-                font-size: 16px;
+            .palette-menu {
+                right: auto;
+                left: 0;
+                min-width: 140px;
             }
-
-            .main-nav {
-                gap: 5px;
-                margin-bottom: 14px;
+            .part-tabs button {
+                font-size: 14px;
+                padding: 8px 16px;
             }
-            .main-nav button {
-                padding: 8px 6px;
-                font-size: 12px;
-                min-width: 50px;
+            .mode-buttons {
+                gap: 3px;
+                margin: 8px 0 14px;
+            }
+            .mode-buttons button {
+                font-size: 10px;
+                padding: 6px 4px;
+                min-width: 35px;
                 flex: 1 1 auto;
                 max-width: none;
                 border-radius: 30px;
             }
-
             .card {
                 min-height: 140px;
                 padding: 16px 12px;
@@ -659,7 +1176,6 @@
             .card-counter {
                 font-size: 13px;
             }
-
             .stats {
                 padding: 8px 12px;
                 font-size: 13px;
@@ -678,9 +1194,15 @@
                 border-radius: 14px;
                 margin-bottom: 6px;
             }
+            .question-block .given {
+                font-size: 24px;
+            }
             .question-hint {
                 font-size: 13px;
                 margin-bottom: 12px;
+            }
+            .match-instruction {
+                font-size: 13px;
             }
             .form-group {
                 gap: 8px;
@@ -716,18 +1238,60 @@
                 padding: 3px 12px;
                 margin-bottom: 10px;
             }
+            .dict-controls input {
+                font-size: 14px;
+                padding: 8px 14px;
+                min-width: 140px;
+            }
+            .dict-controls .filter-buttons button {
+                font-size: 11px;
+                padding: 4px 10px;
+            }
+            .dict-table {
+                font-size: 13px;
+                min-width: 350px;
+            }
+            .dict-table th,
+            .dict-table td {
+                padding: 8px 10px;
+            }
+            .slots-container {
+                gap: 6px;
+                min-height: 50px;
+            }
+            .slot {
+                min-width: 60px;
+                max-width: 150px;
+                min-height: 40px;
+                font-size: 14px;
+                padding: 4px 6px;
+            }
+            .choices-container {
+                gap: 6px;
+            }
+            .choice-btn {
+                min-width: 60px;
+                max-width: 150px;
+                min-height: 40px;
+                font-size: 14px;
+                padding: 4px 6px;
+            }
         }
 
         @media (max-width: 400px) {
-            .part-mobile button {
-                font-size: 14px;
-                padding: 8px 12px;
-                min-width: 60px;
+            .nav-mobile button {
+                font-size: 13px;
+                padding: 6px 10px;
+                min-width: 50px;
             }
-            .main-nav button {
-                font-size: 10px;
-                padding: 6px 4px;
-                min-width: 40px;
+            .part-tabs button {
+                font-size: 12px;
+                padding: 6px 12px;
+            }
+            .mode-buttons button {
+                font-size: 9px;
+                padding: 4px 3px;
+                min-width: 30px;
             }
             .card .russian {
                 font-size: 24px;
@@ -735,6 +1299,12 @@
             .question-word {
                 font-size: 24px;
                 padding: 12px;
+            }
+            .question-block .given {
+                font-size: 20px;
+            }
+            .match-instruction {
+                font-size: 12px;
             }
             .form-group input {
                 font-size: 15px;
@@ -748,17 +1318,48 @@
             .stats span {
                 font-size: 11px;
             }
+            .slot {
+                min-width: 50px;
+                max-width: 120px;
+                min-height: 35px;
+                font-size: 12px;
+                padding: 3px 4px;
+            }
+            .choice-btn {
+                min-width: 50px;
+                max-width: 120px;
+                min-height: 35px;
+                font-size: 12px;
+                padding: 3px 4px;
+            }
+            .dict-table {
+                font-size: 11px;
+                min-width: 280px;
+            }
+            .dict-table th,
+            .dict-table td {
+                padding: 6px 8px;
+            }
+            .dict-controls input {
+                font-size: 12px;
+                padding: 6px 10px;
+                min-width: 100px;
+            }
+            .dict-controls .filter-buttons button {
+                font-size: 10px;
+                padding: 3px 8px;
+            }
         }
     </style>
 </head>
 <body>
 
 <!-- ========================================================== -->
-<!-- МОБИЛЬНАЯ ПАНЕЛЬ PART 1/2 (НАД КОНТЕЙНЕРОМ) -->
+<!-- МОБИЛЬНАЯ ПАНЕЛЬ: СЛОВАРЬ / ТРЕНИРОВКА -->
 <!-- ========================================================== -->
-<div class="part-mobile" id="partMobile">
-    <button id="part1BtnMobile" class="active">Part 1</button>
-    <button id="part2BtnMobile">Part 2</button>
+<div class="nav-mobile" id="navMobile">
+    <button id="navDictMobile" class="active">📖 Словарь</button>
+    <button id="navTrainMobile">🏋️ Тренировка</button>
 </div>
 
 <!-- ========================================================== -->
@@ -766,81 +1367,176 @@
 <!-- ========================================================== -->
 <div class="container">
 
-    <div class="theme-toggle">
-        <button id="themeToggleBtn">
-            <span class="icon">🌙</span>
-            <span>Тема</span>
-        </button>
+    <!-- ========================================================== -->
+    <!-- КНОПКИ УПРАВЛЕНИЯ: ПАЛИТРА -->
+    <!-- ========================================================== -->
+    <div class="controls">
+        <div class="palette-dropdown">
+            <button class="palette-btn" id="paletteToggle">🎨</button>
+            <div class="palette-menu" id="paletteMenu">
+                <button class="theme-option active" data-theme="green">
+                    <span class="dot" style="background:#3a7a4a;"></span> Лесной
+                    <span class="check">✅</span>
+                </button>
+                <button class="theme-option" data-theme="blue">
+                    <span class="dot" style="background:#4a7a9a;"></span> Васильковый
+                    <span class="check">✅</span>
+                </button>
+                <button class="theme-option" data-theme="purple">
+                    <span class="dot" style="background:#5a4a8a;"></span> Аметист
+                    <span class="check">✅</span>
+                </button>
+                <button class="theme-option" data-theme="teal">
+                    <span class="dot" style="background:#3a7a7a;"></span> Аквамарин
+                    <span class="check">✅</span>
+                </button>
+            </div>
+        </div>
     </div>
 
     <h1>📚 Irregular Verbs</h1>
     <p class="subtitle">Неправильные глаголы английского языка</p>
 
-    <div class="main-nav">
-        <button id="cardsTab" class="active">📖 Карточки</button>
-        <button id="mode1Btn">🔤 Перевод</button>
-        <button id="mode2Btn">🔢 2 форма</button>
-        <button id="mode3Btn">📝 3 формы</button>
-    </div>
-
     <!-- ========================================================== -->
-    <!-- КАРТОЧКИ -->
+    <!-- СЕКЦИЯ: СЛОВАРЬ -->
     <!-- ========================================================== -->
-    <div id="cardsSection" class="section active">
-        <div class="card-area">
-            <div class="card" id="flashCard">
-                <button class="speak-btn" id="speakBtn" title="Произнести">🔊</button>
-                <div class="russian" id="cardRussian">—</div>
-                <div class="hint" id="cardHint">👆 Нажми на карточку, чтобы увидеть формы</div>
-                <div class="english" id="cardEnglish" style="display:none;"></div>
-                <div class="forms" id="cardForms" style="display:none;"></div>
+    <div id="dictSection" class="section active">
+        <div class="dict-controls">
+            <input type="text" id="dictSearch" placeholder="🔍 Поиск по слову или переводу...">
+            <div class="filter-buttons" id="dictFilterButtons">
+                <button class="active" data-letter="all">Все</button>
+                <button data-letter="a">A</button>
+                <button data-letter="b">B</button>
+                <button data-letter="c">C</button>
+                <button data-letter="d">D</button>
+                <button data-letter="e">E</button>
+                <button data-letter="f">F</button>
+                <button data-letter="g">G</button>
+                <button data-letter="h">H</button>
+                <button data-letter="i">I</button>
+                <button data-letter="j">J</button>
+                <button data-letter="k">K</button>
+                <button data-letter="l">L</button>
+                <button data-letter="m">M</button>
+                <button data-letter="n">N</button>
+                <button data-letter="o">O</button>
+                <button data-letter="p">P</button>
+                <button data-letter="q">Q</button>
+                <button data-letter="r">R</button>
+                <button data-letter="s">S</button>
+                <button data-letter="t">T</button>
+                <button data-letter="u">U</button>
+                <button data-letter="v">V</button>
+                <button data-letter="w">W</button>
+                <button data-letter="x">X</button>
+                <button data-letter="y">Y</button>
+                <button data-letter="z">Z</button>
             </div>
-            <div class="card-nav">
-                <button id="prevCardBtn" class="secondary">◀ Назад</button>
-                <button id="nextCardBtn">Вперёд ▶</button>
-            </div>
-            <div class="card-counter" id="cardCounter">1 из 26</div>
         </div>
+        <div class="dict-table-wrapper">
+            <table class="dict-table">
+                <thead>
+                    <tr>
+                        <th>Infinitive</th>
+                        <th>Past Simple</th>
+                        <th>Past Participle</th>
+                        <th>Перевод</th>
+                    </tr>
+                </thead>
+                <tbody id="dictTableBody"></tbody>
+            </table>
+        </div>
+        <div class="dict-count" id="dictCount"></div>
     </div>
 
     <!-- ========================================================== -->
-    <!-- ТРЕНАЖЁР -->
+    <!-- СЕКЦИЯ: ТРЕНИРОВКА -->
     <!-- ========================================================== -->
     <div id="trainSection" class="section">
-        <div class="stats">
-            <span>✅ Правильно: <span class="right" id="correctCount">0</span></span>
-            <span>❌ Ошибок: <span class="wrong" id="wrongCount">0</span></span>
-            <span>📌 Осталось: <span id="remainingCount">0</span></span>
+        <div class="part-tabs" id="partTabs">
+            <button class="active" data-part="1">📘 Часть 1</button>
+            <button data-part="2">📗 Часть 2</button>
         </div>
 
-        <div class="part-label" id="partLabel">Part 1</div>
-
-        <div class="question-word" id="questionWord">—</div>
-        <div class="question-hint" id="questionHint">Введите ответ</div>
-
-        <div class="form-group">
-            <input type="text" id="singleInput" placeholder="Введите ответ" autocomplete="off" class="hidden">
-            <input type="text" id="infinitiveInput" placeholder="Infinitive (1 форма)" autocomplete="off" class="hidden">
-            <input type="text" id="pastSimpleInput" placeholder="Past Simple (2 форма)" autocomplete="off" class="hidden">
-            <input type="text" id="pastParticipleInput" placeholder="Past Participle (3 форма)" autocomplete="off" class="hidden">
+        <div class="mode-buttons" id="modeButtons">
+            <button class="active" data-mode="cards">Карточки</button>
+            <button data-mode="mode1">Перевод</button>
+            <button data-mode="match">Порядок</button>
+            <button data-mode="mode2">2-я</button>
+            <button data-mode="mode3">3-я</button>
+            <button data-mode="mode4">Все формы</button>
         </div>
 
-        <div class="btn-row">
-            <button id="checkBtn">✅ Проверить</button>
-            <button id="nextBtn" class="secondary" disabled>➡️ Следующий</button>
+        <!-- КАРТОЧКИ -->
+        <div id="cardsSection" class="sub-section active">
+            <div class="card-area">
+                <div class="card" id="flashCard">
+                    <button class="speak-btn" id="speakBtn" title="Произнести">🔊</button>
+                    <div class="russian" id="cardRussian">—</div>
+                    <div class="hint" id="cardHint">👆 Нажми на карточку, чтобы увидеть формы</div>
+                    <div class="english" id="cardEnglish" style="display:none;"></div>
+                    <div class="forms" id="cardForms" style="display:none;"></div>
+                </div>
+                <div class="card-nav">
+                    <button id="prevCardBtn" class="secondary">◀ Назад</button>
+                    <button id="nextCardBtn">Вперёд ▶</button>
+                </div>
+                <div class="card-counter" id="cardCounter">1 из 26</div>
+            </div>
         </div>
 
-        <div class="result-message" id="resultMessage"></div>
-        <div class="progress-text" id="progressText"></div>
+        <!-- ПОРЯДОК -->
+        <div id="matchSection" class="sub-section">
+            <div class="stats">
+                <span>✅ Правильно: <span class="right" id="matchCorrectCount">0</span></span>
+                <span>❌ Ошибок: <span class="wrong" id="matchWrongCount">0</span></span>
+                <span>📌 Осталось: <span id="matchRemainingCount">0</span></span>
+            </div>
+            <div class="question-word" id="matchQuestionWord">—</div>
+            <div class="match-instruction">Нажмите формы по порядку: 1 → 2 → 3</div>
+            <div class="slots-container" id="slotsContainer">
+                <div class="slot" data-slot="0"><span class="order-num">1.</span></div>
+                <div class="slot" data-slot="1"><span class="order-num">2.</span></div>
+                <div class="slot" data-slot="2"><span class="order-num">3.</span></div>
+            </div>
+            <div class="choices-container" id="choicesContainer"></div>
+            <div class="result-message" id="matchResultMessage"></div>
+            <div class="progress-text" id="matchProgressText"></div>
+        </div>
+
+        <!-- ТРЕНАЖЁР (ПЕРЕВОД, 2-я, 3-я, ВСЕ ФОРМЫ) -->
+        <div id="trainSubSection" class="sub-section">
+            <div class="stats">
+                <span>✅ Правильно: <span class="right" id="correctCount">0</span></span>
+                <span>❌ Ошибок: <span class="wrong" id="wrongCount">0</span></span>
+                <span>📌 Осталось: <span id="remainingCount">0</span></span>
+            </div>
+            <div id="questionContainer">
+                <!-- Контент заполняется динамически в JS -->
+            </div>
+            <div class="form-group">
+                <input type="text" id="singleInput" placeholder="Введите ответ" autocomplete="off" class="hidden">
+                <input type="text" id="infinitiveInput" placeholder="Infinitive (1 форма)" autocomplete="off" class="hidden">
+                <input type="text" id="pastSimpleInput" placeholder="Past Simple (2 форма)" autocomplete="off" class="hidden">
+                <input type="text" id="pastParticipleInput" placeholder="Past Participle (3 форма)" autocomplete="off" class="hidden">
+            </div>
+            <div class="btn-row">
+                <button id="checkBtn">✅ Проверить</button>
+                <button id="nextBtn" class="secondary" disabled>➡️ Следующий</button>
+            </div>
+            <div class="result-message" id="resultMessage"></div>
+            <div class="progress-text" id="progressText"></div>
+        </div>
     </div>
+
 </div>
 
 <!-- ========================================================== -->
-<!-- БОКОВАЯ ПАНЕЛЬ PART 1/2 (ТОЛЬКО ДЛЯ КОМПА) -->
+<!-- БОКОВАЯ ПАНЕЛЬ: СЛОВАРЬ / ТРЕНИРОВКА -->
 <!-- ========================================================== -->
-<div class="part-sidebar" id="partSidebar">
-    <button id="part1BtnSide" class="active">Part 1</button>
-    <button id="part2BtnSide">Part 2</button>
+<div class="nav-sidebar" id="navSidebar">
+    <button id="navDictSide" class="active">📖 Словарь</button>
+    <button id="navTrainSide">🏋️ Тренировка</button>
 </div>
 
 <script>
@@ -906,24 +1602,52 @@
         { ru: "писать", infinitive: "write", past: "wrote", participle: "written" }
     ];
 
-    // ==============================================================
-    // ТЕМА
-    // ==============================================================
-    const themeToggleBtn = document.getElementById('themeToggleBtn');
-    let currentTheme = localStorage.getItem('theme') || 'light';
+    const allVerbs = [...part1Verbs, ...part2Verbs].sort((a, b) =>
+        a.infinitive.localeCompare(b.infinitive)
+    );
 
-    function applyTheme(theme) {
-        document.documentElement.setAttribute('data-theme', theme);
-        currentTheme = theme;
-        localStorage.setItem('theme', theme);
-        const icon = themeToggleBtn.querySelector('.icon');
-        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+    // ==============================================================
+    // ПРИМЕНЕНИЕ ТЕМЫ
+    // ==============================================================
+    let currentTheme = 'green';
+
+    function applyTheme(themeKey) {
+        document.documentElement.setAttribute('data-theme', themeKey);
+        currentTheme = themeKey;
+        document.querySelectorAll('.palette-menu .theme-option').forEach(el => {
+            el.classList.toggle('active', el.dataset.theme === themeKey);
+        });
+        localStorage.setItem('verbTheme', themeKey);
     }
 
-    themeToggleBtn.addEventListener('click', () => {
-        applyTheme(currentTheme === 'light' ? 'dark' : 'light');
+    // ==============================================================
+    // ПАЛИТРА
+    // ==============================================================
+    const paletteToggle = document.getElementById('paletteToggle');
+    const paletteMenu = document.getElementById('paletteMenu');
+
+    paletteToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        paletteMenu.classList.toggle('open');
     });
-    applyTheme(currentTheme);
+
+    document.addEventListener('click', () => {
+        paletteMenu.classList.remove('open');
+    });
+
+    document.querySelectorAll('.palette-menu .theme-option').forEach(el => {
+        el.addEventListener('click', () => {
+            applyTheme(el.dataset.theme);
+            paletteMenu.classList.remove('open');
+        });
+    });
+
+    // ==============================================================
+    // ВОССТАНОВЛЕНИЕ НАСТРОЕК
+    // ==============================================================
+    const savedTheme = localStorage.getItem('verbTheme');
+    if (savedTheme) applyTheme(savedTheme);
+    else applyTheme('green');
 
     // ==============================================================
     // ОЗВУЧКА
@@ -934,13 +1658,9 @@
     function speakAllForms(verb) {
         if (!('speechSynthesis' in window)) return;
         window.speechSynthesis.cancel();
-        
         let text = `${verb.infinitive} — ${verb.past} — ${verb.participle}`;
-        if (verb.participle === '—') {
-            text = `${verb.infinitive} — ${verb.past}`;
-        }
+        if (verb.participle === '—') text = `${verb.infinitive} — ${verb.past}`;
         currentSpeakText = text;
-        
         const utterance = new SpeechSynthesisUtterance(text);
         utterance.lang = 'en-US';
         utterance.rate = 0.8;
@@ -956,6 +1676,70 @@
         const verb = currentCardList[currentCardIndex];
         if (verb) speakAllForms(verb);
     });
+
+    // ==============================================================
+    // DICTIONARY
+    // ==============================================================
+    let dictFilterLetter = 'all';
+    let dictSearchQuery = '';
+
+    const dictTableBody = document.getElementById('dictTableBody');
+    const dictSearch = document.getElementById('dictSearch');
+    const dictFilterButtons = document.getElementById('dictFilterButtons');
+    const dictCount = document.getElementById('dictCount');
+
+    function renderDictionary() {
+        let filtered = [...allVerbs];
+        if (dictFilterLetter !== 'all') {
+            filtered = filtered.filter(v => v.infinitive.toLowerCase().startsWith(dictFilterLetter));
+        }
+        if (dictSearchQuery.trim() !== '') {
+            const query = dictSearchQuery.trim().toLowerCase();
+            filtered = filtered.filter(v =>
+                v.infinitive.toLowerCase().includes(query) ||
+                v.past.toLowerCase().includes(query) ||
+                v.participle.toLowerCase().includes(query) ||
+                v.ru.toLowerCase().includes(query)
+            );
+        }
+        if (filtered.length === 0) {
+            dictTableBody.innerHTML = `<tr><td colspan="4" class="no-results">😕 Ничего не найдено</td></tr>`;
+            dictCount.textContent = `Показано 0 из ${allVerbs.length} глаголов`;
+            return;
+        }
+        let html = '';
+        filtered.forEach(v => {
+            html += `
+                <tr>
+                    <td class="verb-infinitive">${v.infinitive}</td>
+                    <td class="verb-past">${v.past}</td>
+                    <td class="verb-participle">${v.participle}</td>
+                    <td class="verb-translation">${v.ru}</td>
+                </tr>
+            `;
+        });
+        dictTableBody.innerHTML = html;
+        dictCount.textContent = `Показано ${filtered.length} из ${allVerbs.length} глаголов`;
+    }
+
+    function setupDictionaryFilters() {
+        dictFilterButtons.querySelectorAll('button').forEach(btn => {
+            btn.addEventListener('click', () => {
+                dictFilterButtons.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                dictFilterLetter = btn.dataset.letter;
+                renderDictionary();
+            });
+        });
+        dictSearch.addEventListener('input', (e) => {
+            dictSearchQuery = e.target.value;
+            dictFilterButtons.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+            const allBtn = dictFilterButtons.querySelector('[data-letter="all"]');
+            if (allBtn) allBtn.classList.add('active');
+            dictFilterLetter = 'all';
+            renderDictionary();
+        });
+    }
 
     // ==============================================================
     // КАРТОЧКИ
@@ -1013,7 +1797,7 @@
     });
 
     document.addEventListener('keydown', (e) => {
-        if (document.getElementById('cardsSection').classList.contains('active')) {
+        if (currentMode === 'cards' && document.getElementById('cardsSection').style.display !== 'none') {
             if (e.key === 'ArrowLeft' && currentCardIndex > 0) { currentCardIndex--; updateCard(); }
             else if (e.key === 'ArrowRight' && currentCardIndex < currentCardList.length - 1) { currentCardIndex++; updateCard(); }
             else if (e.key === ' ' || e.key === 'Space') { e.preventDefault(); flipCard(); }
@@ -1021,7 +1805,157 @@
     });
 
     // ==============================================================
-    // ТРЕНАЖЁР
+    // ПОРЯДОК
+    // ==============================================================
+    let matchVerbs = [];
+    let matchRemaining = [];
+    let matchCurrentVerb = null;
+    let matchCorrectTotal = 0;
+    let matchWrongTotal = 0;
+    let matchCurrentPart = 1;
+    let matchSteps = [];
+    let matchCurrentStep = 0;
+    let matchIsAnswered = false;
+    let matchTimer = null;
+
+    const matchQuestionWord = document.getElementById('matchQuestionWord');
+    const slotsContainer = document.getElementById('slotsContainer');
+    const choicesContainer = document.getElementById('choicesContainer');
+    const matchResultMessage = document.getElementById('matchResultMessage');
+    const matchCorrectCountEl = document.getElementById('matchCorrectCount');
+    const matchWrongCountEl = document.getElementById('matchWrongCount');
+    const matchRemainingCountEl = document.getElementById('matchRemainingCount');
+    const matchProgressText = document.getElementById('matchProgressText');
+
+    function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [arr[i], arr[j]] = [arr[j], arr[i]];
+        }
+        return arr;
+    }
+
+    function updateMatchStats() {
+        matchCorrectCountEl.textContent = matchCorrectTotal;
+        matchWrongCountEl.textContent = matchWrongTotal;
+        matchRemainingCountEl.textContent = matchRemaining.length;
+        const total = matchVerbs.length;
+        const done = total - matchRemaining.length;
+        matchProgressText.textContent = `Прогресс: ${done} из ${total} глаголов (Часть ${matchCurrentPart})`;
+    }
+
+    function isButtonValidForSlot(btnType, expectedType, verb) {
+        if (btnType === expectedType) return true;
+        if (verb.infinitive === verb.past && verb.infinitive !== '—') {
+            if ((btnType === 'infinitive' || btnType === 'past') && (expectedType === 'infinitive' || expectedType === 'past')) return true;
+        }
+        if (verb.past === verb.participle && verb.past !== '—') {
+            if ((btnType === 'past' || btnType === 'participle') && (expectedType === 'past' || expectedType === 'participle')) return true;
+        }
+        if (verb.infinitive === verb.participle && verb.infinitive !== '—') {
+            if ((btnType === 'infinitive' || btnType === 'participle') && (expectedType === 'infinitive' || expectedType === 'participle')) return true;
+        }
+        if (verb.infinitive === verb.past && verb.past === verb.participle && verb.infinitive !== '—') return true;
+        return false;
+    }
+
+    function loadMatchVerb() {
+        if (matchTimer) { clearTimeout(matchTimer); matchTimer = null; }
+        if (matchRemaining.length === 0) {
+            matchQuestionWord.textContent = '🎉 ВСЕ ГЛАГОЛЫ ВЫУЧЕНЫ!';
+            slotsContainer.innerHTML = '<div style="grid-column:1/-1; font-size:18px; color:var(--text-secondary);">Поздравляем! Вы прошли все глаголы!</div>';
+            choicesContainer.innerHTML = '';
+            matchResultMessage.textContent = `Поздравляю! Вы прошли Часть ${matchCurrentPart}!`;
+            matchResultMessage.className = 'result-message ok';
+            return;
+        }
+        const idx = Math.floor(Math.random() * matchRemaining.length);
+        matchCurrentVerb = matchRemaining[idx];
+        matchRemaining.splice(idx, 1);
+        matchIsAnswered = false;
+        matchCurrentStep = 0;
+        matchResultMessage.textContent = '';
+        matchResultMessage.className = 'result-message';
+        const forms = [
+            { text: matchCurrentVerb.infinitive, type: 'infinitive' },
+            { text: matchCurrentVerb.past, type: 'past' },
+            { text: matchCurrentVerb.participle, type: 'participle' }
+        ];
+        if (matchCurrentVerb.participle === '—') forms[2].text = '—';
+        matchSteps = shuffleArray([...forms]);
+        const slots = slotsContainer.querySelectorAll('.slot');
+        slots.forEach(slot => {
+            slot.innerHTML = `<span class="order-num">${parseInt(slot.dataset.slot) + 1}.</span>`;
+            slot.classList.remove('filled');
+        });
+        choicesContainer.innerHTML = '';
+        matchSteps.forEach((step, index) => {
+            const btn = document.createElement('button');
+            btn.className = 'choice-btn';
+            btn.textContent = step.text;
+            btn.dataset.index = index;
+            btn.dataset.type = step.type;
+            btn.addEventListener('click', () => handleMatchChoice(btn, index));
+            choicesContainer.appendChild(btn);
+        });
+        matchQuestionWord.textContent = matchCurrentVerb.ru;
+        updateMatchStats();
+    }
+
+    function handleMatchChoice(btn, index) {
+        if (matchIsAnswered || btn.disabled) return;
+        const expectedType = matchCurrentStep === 0 ? 'infinitive' : matchCurrentStep === 1 ? 'past' : 'participle';
+        const chosenType = matchSteps[index].type;
+        const chosenText = matchSteps[index].text;
+        const isValid = isButtonValidForSlot(chosenType, expectedType, matchCurrentVerb);
+        if (isValid) {
+            const slot = slotsContainer.querySelector(`.slot[data-slot="${matchCurrentStep}"]`);
+            slot.innerHTML = '';
+            const orderSpan = document.createElement('span');
+            orderSpan.className = 'order-num';
+            orderSpan.textContent = `${matchCurrentStep + 1}.`;
+            const textSpan = document.createElement('span');
+            textSpan.className = 'slot-text';
+            textSpan.textContent = chosenText;
+            slot.appendChild(orderSpan);
+            slot.appendChild(textSpan);
+            slot.classList.add('filled');
+            btn.classList.add('correct-choice');
+            btn.disabled = true;
+            matchCurrentStep++;
+            if (matchCurrentStep === 3) {
+                matchIsAnswered = true;
+                matchCorrectTotal++;
+                matchResultMessage.textContent = '✅ Отлично! Все формы собраны правильно!';
+                matchResultMessage.className = 'result-message ok';
+                updateMatchStats();
+                choicesContainer.querySelectorAll('.choice-btn').forEach(b => b.disabled = true);
+                if (matchRemaining.length > 0) {
+                    matchTimer = setTimeout(() => loadMatchVerb(), 900);
+                } else {
+                    matchTimer = setTimeout(() => loadMatchVerb(), 1200);
+                }
+            }
+        } else {
+            matchWrongTotal++;
+            btn.classList.add('wrong-choice');
+            setTimeout(() => btn.classList.remove('wrong-choice'), 400);
+            updateMatchStats();
+        }
+    }
+
+    function switchMatchPart(part) {
+        if (matchTimer) { clearTimeout(matchTimer); matchTimer = null; }
+        matchCurrentPart = part;
+        matchVerbs = part === 1 ? [...part1Verbs] : [...part2Verbs];
+        matchRemaining = [...matchVerbs];
+        matchCorrectTotal = 0;
+        matchWrongTotal = 0;
+        loadMatchVerb();
+    }
+
+    // ==============================================================
+    // ТРЕНАЖЁР (ПЕРЕВОД, 2-я, 3-я, ВСЕ ФОРМЫ)
     // ==============================================================
     let currentVerbs = [];
     let currentVerb = null;
@@ -1031,10 +1965,10 @@
     let isAnswered = false;
     let currentPart = 1;
     let currentMode = 'cards';
+    let currentNav = 'dict';
     let autoNextTimer = null;
 
-    const questionWord = document.getElementById('questionWord');
-    const questionHint = document.getElementById('questionHint');
+    const questionContainer = document.getElementById('questionContainer');
     const singleInput = document.getElementById('singleInput');
     const infinitiveInput = document.getElementById('infinitiveInput');
     const pastSimpleInput = document.getElementById('pastSimpleInput');
@@ -1046,17 +1980,18 @@
     const wrongCountEl = document.getElementById('wrongCount');
     const remainingCountEl = document.getElementById('remainingCount');
     const progressText = document.getElementById('progressText');
-    const partLabel = document.getElementById('partLabel');
-    const part1BtnMobile = document.getElementById('part1BtnMobile');
-    const part2BtnMobile = document.getElementById('part2BtnMobile');
-    const part1BtnSide = document.getElementById('part1BtnSide');
-    const part2BtnSide = document.getElementById('part2BtnSide');
-    const cardsTab = document.getElementById('cardsTab');
-    const mode1Btn = document.getElementById('mode1Btn');
-    const mode2Btn = document.getElementById('mode2Btn');
-    const mode3Btn = document.getElementById('mode3Btn');
-    const cardsSection = document.getElementById('cardsSection');
+
+    const navDictMobile = document.getElementById('navDictMobile');
+    const navTrainMobile = document.getElementById('navTrainMobile');
+    const navDictSide = document.getElementById('navDictSide');
+    const navTrainSide = document.getElementById('navTrainSide');
+    const dictSection = document.getElementById('dictSection');
     const trainSection = document.getElementById('trainSection');
+    const cardsSection = document.getElementById('cardsSection');
+    const matchSection = document.getElementById('matchSection');
+    const trainSubSection = document.getElementById('trainSubSection');
+    const partTabs = document.getElementById('partTabs');
+    const modeButtons = document.getElementById('modeButtons');
 
     function normalize(str) {
         return str.trim().toLowerCase().replace(/\s*\/\s*/g, '/').replace(/\s+/g, ' ');
@@ -1068,21 +2003,25 @@
         remainingCountEl.textContent = remaining.length;
         const total = currentVerbs.length;
         const done = total - remaining.length;
-        const modeNames = { 'mode1': 'Перевод', 'mode2': '2 форма', 'mode3': '3 формы' };
-        progressText.textContent = `Прогресс: ${done} из ${total} глаголов (Part ${currentPart}, ${modeNames[currentMode] || ''})`;
+        const modeNames = {
+            'mode1': 'Перевод',
+            'mode2': '2-я форма',
+            'mode3': '3-я форма',
+            'mode4': 'Все формы'
+        };
+        progressText.textContent = `Прогресс: ${done} из ${total} глаголов (Часть ${currentPart}, ${modeNames[currentMode] || ''})`;
     }
 
     function pickRandomVerb() {
         if (remaining.length === 0) {
-            questionWord.textContent = '🎉 ВСЕ ГЛАГОЛЫ ВЫУЧЕНЫ!';
-            questionHint.textContent = 'Поздравляем!';
+            questionContainer.innerHTML = `<div class="question-block"><div class="finished">🎉 ВСЕ ГЛАГОЛЫ ВЫУЧЕНЫ!</div></div>`;
             singleInput.disabled = true;
             infinitiveInput.disabled = true;
             pastSimpleInput.disabled = true;
             pastParticipleInput.disabled = true;
             checkBtn.disabled = true;
             nextBtn.disabled = true;
-            resultMessage.textContent = `Поздравляю! Вы прошли Part ${currentPart}!`;
+            resultMessage.textContent = `Поздравляю! Вы прошли Часть ${currentPart}!`;
             resultMessage.className = 'result-message ok';
             return null;
         }
@@ -1093,11 +2032,7 @@
     }
 
     function loadNewVerb() {
-        if (autoNextTimer) {
-            clearTimeout(autoNextTimer);
-            autoNextTimer = null;
-        }
-
+        if (autoNextTimer) { clearTimeout(autoNextTimer); autoNextTimer = null; }
         currentVerb = pickRandomVerb();
         if (!currentVerb) return;
 
@@ -1109,27 +2044,60 @@
         infinitiveInput.className = '';
         pastSimpleInput.className = '';
         pastParticipleInput.className = '';
-        
         singleInput.classList.add('hidden');
         infinitiveInput.classList.add('hidden');
         pastSimpleInput.classList.add('hidden');
         pastParticipleInput.classList.add('hidden');
 
+        let hintText = '';
+        let placeholderText = '';
+
         if (currentMode === 'mode1') {
-            questionWord.textContent = currentVerb.ru;
-            questionHint.textContent = 'Введите 1 форму (Infinitive)';
+            // ПЕРЕВОД
+            questionContainer.innerHTML = `
+                <div class="question-word">${currentVerb.ru}</div>
+            `;
+            hintText = 'Введите 1-ю форму (Infinitive)';
+            placeholderText = 'Введите Infinitive';
             singleInput.classList.remove('hidden');
-            singleInput.placeholder = 'Введите инфинитив';
+            singleInput.placeholder = placeholderText;
             singleInput.focus();
         } else if (currentMode === 'mode2') {
-            questionWord.textContent = currentVerb.infinitive;
-            questionHint.textContent = 'Введите 2 форму (Past Simple)';
+            // 2-я — только инфинитив
+            questionContainer.innerHTML = `
+                <div class="question-block">
+                    <div class="given">${currentVerb.infinitive}</div>
+                </div>
+            `;
+            hintText = 'Введите 2-ю форму (Past Simple)';
+            placeholderText = 'Введите Past Simple';
             singleInput.classList.remove('hidden');
-            singleInput.placeholder = 'Введите Past Simple';
+            singleInput.placeholder = placeholderText;
             singleInput.focus();
         } else if (currentMode === 'mode3') {
-            questionWord.textContent = currentVerb.ru;
-            questionHint.textContent = 'Введите все 3 формы';
+            // 3-я
+            questionContainer.innerHTML = `
+                <div class="question-block">
+                    <div class="given">
+                        <span>${currentVerb.infinitive}</span>
+                        <span style="color:var(--text-light); font-weight:400;"> — </span>
+                        <span class="highlight">${currentVerb.past}</span>
+                    </div>
+                </div>
+            `;
+            hintText = 'Введите 3-ю форму (Past Participle)';
+            placeholderText = 'Введите Past Participle';
+            singleInput.classList.remove('hidden');
+            singleInput.placeholder = placeholderText;
+            singleInput.focus();
+        } else if (currentMode === 'mode4') {
+            // ВСЕ ФОРМЫ
+            questionContainer.innerHTML = `
+                <div class="question-word">${currentVerb.ru}</div>
+            `;
+            hintText = 'Введите все 3 формы';
+            placeholderText = '';
+            singleInput.classList.add('hidden');
             infinitiveInput.classList.remove('hidden');
             pastSimpleInput.classList.remove('hidden');
             pastParticipleInput.classList.remove('hidden');
@@ -1137,6 +2105,19 @@
             pastSimpleInput.placeholder = 'Past Simple (2 форма)';
             pastParticipleInput.placeholder = 'Past Participle (3 форма)';
             infinitiveInput.focus();
+        }
+
+        const hintEl = document.querySelector('.question-hint');
+        if (hintEl) hintEl.textContent = hintText;
+        else {
+            const existing = document.querySelector('.question-hint');
+            if (existing) existing.textContent = hintText;
+            else {
+                const newHint = document.createElement('div');
+                newHint.className = 'question-hint';
+                newHint.textContent = hintText;
+                questionContainer.after(newHint);
+            }
         }
 
         resultMessage.textContent = '';
@@ -1148,7 +2129,6 @@
         infinitiveInput.disabled = false;
         pastSimpleInput.disabled = false;
         pastParticipleInput.disabled = false;
-        
         updateStats();
     }
 
@@ -1171,10 +2151,22 @@
             correctAnswer = currentVerb.past;
             singleInput.className = isCorrect ? 'correct' : 'wrong';
         } else if (currentMode === 'mode3') {
+            const userAnswer = normalize(singleInput.value);
+            const expected = normalize(currentVerb.participle);
+            isCorrect = userAnswer === expected;
+            correctAnswer = currentVerb.participle;
+            singleInput.className = isCorrect ? 'correct' : 'wrong';
+            if (isCorrect) {
+                document.querySelector('.question-block .highlight').textContent = currentVerb.participle;
+                document.querySelector('.question-block .highlight').style.color = 'var(--correct)';
+            } else {
+                document.querySelector('.question-block .highlight').textContent = currentVerb.participle;
+                document.querySelector('.question-block .highlight').style.color = 'var(--wrong)';
+            }
+        } else if (currentMode === 'mode4') {
             const userInf = normalize(infinitiveInput.value);
             const userPast = normalize(pastSimpleInput.value);
             const userPart = normalize(pastParticipleInput.value);
-            
             const infOk = userInf === normalize(currentVerb.infinitive);
             const pastOk = userPast === normalize(currentVerb.past);
             let partOk;
@@ -1183,14 +2175,11 @@
             } else {
                 partOk = userPart === normalize(currentVerb.participle);
             }
-            
             isCorrect = infOk && pastOk && partOk;
             correctAnswer = `${currentVerb.infinitive} — ${currentVerb.past} — ${currentVerb.participle}`;
-            
             infinitiveInput.className = infOk ? 'correct-light' : 'wrong-light';
             pastSimpleInput.className = pastOk ? 'correct-light' : 'wrong-light';
             pastParticipleInput.className = partOk ? 'correct-light' : 'wrong-light';
-            
             if (infOk && pastOk && partOk) {
                 infinitiveInput.className = 'correct';
                 pastSimpleInput.className = 'correct';
@@ -1216,73 +2205,47 @@
 
         if (isCorrect) {
             if (remaining.length > 0) {
-                autoNextTimer = setTimeout(() => {
-                    loadNewVerb();
-                }, 800);
+                autoNextTimer = setTimeout(() => loadNewVerb(), 800);
             } else {
-                autoNextTimer = setTimeout(() => {
-                    updateStats();
-                }, 1000);
+                autoNextTimer = setTimeout(() => updateStats(), 1000);
             }
         }
     }
 
-    function switchPart(part) {
-        if (autoNextTimer) {
-            clearTimeout(autoNextTimer);
-            autoNextTimer = null;
-        }
-        currentPart = part;
-        
-        // Обновляем все кнопки Part (мобильные и боковые)
-        const btns = [part1BtnMobile, part2BtnMobile, part1BtnSide, part2BtnSide];
-        btns.forEach(btn => btn.classList.remove('active'));
-        
-        if (part === 1) {
-            currentVerbs = [...part1Verbs];
-            part1BtnMobile.classList.add('active');
-            part1BtnSide.classList.add('active');
-            partLabel.textContent = 'Part 1';
+    // ==============================================================
+    // УПРАВЛЕНИЕ
+    // ==============================================================
+    function switchNav(nav) {
+        if (autoNextTimer) { clearTimeout(autoNextTimer); autoNextTimer = null; }
+        currentNav = nav;
+        [navDictMobile, navTrainMobile, navDictSide, navTrainSide].forEach(btn => btn.classList.remove('active'));
+        [dictSection, trainSection].forEach(section => section.classList.remove('active'));
+        if (nav === 'dict') {
+            navDictMobile.classList.add('active');
+            navDictSide.classList.add('active');
+            dictSection.classList.add('active');
+            renderDictionary();
         } else {
-            currentVerbs = [...part2Verbs];
-            part2BtnMobile.classList.add('active');
-            part2BtnSide.classList.add('active');
-            partLabel.textContent = 'Part 2';
-        }
-        
-        remaining = [...currentVerbs];
-        correctTotal = 0;
-        wrongTotal = 0;
-        isAnswered = false;
-        if (currentMode === 'cards') {
-            currentCardList = [...currentVerbs];
-            currentCardIndex = 0;
-            updateCard();
-        } else {
-            loadNewVerb();
+            navTrainMobile.classList.add('active');
+            navTrainSide.classList.add('active');
+            trainSection.classList.add('active');
+            showSubMode(currentMode);
         }
     }
 
-    function switchMode(mode) {
-        if (autoNextTimer) {
-            clearTimeout(autoNextTimer);
-            autoNextTimer = null;
-        }
+    function showSubMode(mode) {
         currentMode = mode;
-        [cardsTab, mode1Btn, mode2Btn, mode3Btn].forEach(btn => btn.classList.remove('active'));
+        [cardsSection, matchSection, trainSubSection].forEach(s => s.classList.remove('active'));
         if (mode === 'cards') {
-            cardsTab.classList.add('active');
             cardsSection.classList.add('active');
-            trainSection.classList.remove('active');
-            currentCardList = currentPart === 1 ? [...part1Verbs] : [...part2Verbs];
-            currentCardIndex = 0;
             updateCard();
+        } else if (mode === 'match') {
+            matchSection.classList.add('active');
+            switchMatchPart(currentPart);
         } else {
-            if (mode === 'mode1') mode1Btn.classList.add('active');
-            else if (mode === 'mode2') mode2Btn.classList.add('active');
-            else if (mode === 'mode3') mode3Btn.classList.add('active');
-            cardsSection.classList.remove('active');
-            trainSection.classList.add('active');
+            trainSubSection.classList.add('active');
+            const oldHint = document.querySelector('.question-hint');
+            if (oldHint) oldHint.remove();
             currentVerbs = currentPart === 1 ? [...part1Verbs] : [...part2Verbs];
             remaining = [...currentVerbs];
             correctTotal = 0;
@@ -1290,45 +2253,64 @@
             isAnswered = false;
             loadNewVerb();
         }
+        modeButtons.querySelectorAll('button').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.mode === mode);
+        });
+        partTabs.querySelectorAll('button').forEach(btn => {
+            btn.classList.toggle('active', parseInt(btn.dataset.part) === currentPart);
+        });
+    }
+
+    function switchPart(part) {
+        if (autoNextTimer) { clearTimeout(autoNextTimer); autoNextTimer = null; }
+        currentPart = part;
+        if (currentMode === 'cards') {
+            currentCardList = part === 1 ? [...part1Verbs] : [...part2Verbs];
+            currentCardIndex = 0;
+            updateCard();
+        } else if (currentMode === 'match') {
+            switchMatchPart(part);
+        } else {
+            currentVerbs = part === 1 ? [...part1Verbs] : [...part2Verbs];
+            remaining = [...currentVerbs];
+            correctTotal = 0;
+            wrongTotal = 0;
+            isAnswered = false;
+            loadNewVerb();
+        }
+        partTabs.querySelectorAll('button').forEach(btn => {
+            btn.classList.toggle('active', parseInt(btn.dataset.part) === part);
+        });
     }
 
     // ==============================================================
     // ОБРАБОТЧИКИ
     // ==============================================================
-    part1BtnMobile.addEventListener('click', () => switchPart(1));
-    part2BtnMobile.addEventListener('click', () => switchPart(2));
-    part1BtnSide.addEventListener('click', () => switchPart(1));
-    part2BtnSide.addEventListener('click', () => switchPart(2));
-    
-    cardsTab.addEventListener('click', () => switchMode('cards'));
-    mode1Btn.addEventListener('click', () => switchMode('mode1'));
-    mode2Btn.addEventListener('click', () => switchMode('mode2'));
-    mode3Btn.addEventListener('click', () => switchMode('mode3'));
-    checkBtn.addEventListener('click', checkAnswers);
-    nextBtn.addEventListener('click', () => {
-        if (autoNextTimer) {
-            clearTimeout(autoNextTimer);
-            autoNextTimer = null;
-        }
-        if (remaining.length > 0 || currentVerb) {
-            loadNewVerb();
-        }
+    navDictMobile.addEventListener('click', () => switchNav('dict'));
+    navTrainMobile.addEventListener('click', () => switchNav('train'));
+    navDictSide.addEventListener('click', () => switchNav('dict'));
+    navTrainSide.addEventListener('click', () => switchNav('train'));
+
+    partTabs.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', () => switchPart(parseInt(btn.dataset.part)));
     });
 
-    // ==============================================================
-    // КЛАВИШИ
-    // ==============================================================
+    modeButtons.querySelectorAll('button').forEach(btn => {
+        btn.addEventListener('click', () => showSubMode(btn.dataset.mode));
+    });
+
+    checkBtn.addEventListener('click', checkAnswers);
+    nextBtn.addEventListener('click', () => {
+        if (autoNextTimer) { clearTimeout(autoNextTimer); autoNextTimer = null; }
+        if (remaining.length > 0 || currentVerb) loadNewVerb();
+    });
+
     singleInput.addEventListener('keydown', (e) => {
         if (e.key === 'Enter' || e.key === 'Return') {
             e.preventDefault();
             if (isAnswered) {
-                if (autoNextTimer) {
-                    clearTimeout(autoNextTimer);
-                    autoNextTimer = null;
-                }
-                if (remaining.length > 0 || currentVerb) {
-                    loadNewVerb();
-                }
+                if (autoNextTimer) { clearTimeout(autoNextTimer); autoNextTimer = null; }
+                if (remaining.length > 0 || currentVerb) loadNewVerb();
                 return;
             }
             checkAnswers();
@@ -1341,20 +2323,12 @@
             if (e.key === 'Enter' || e.key === 'Return') {
                 e.preventDefault();
                 if (isAnswered) {
-                    if (autoNextTimer) {
-                        clearTimeout(autoNextTimer);
-                        autoNextTimer = null;
-                    }
-                    if (remaining.length > 0 || currentVerb) {
-                        loadNewVerb();
-                    }
+                    if (autoNextTimer) { clearTimeout(autoNextTimer); autoNextTimer = null; }
+                    if (remaining.length > 0 || currentVerb) loadNewVerb();
                     return;
                 }
-                if (index === 2) {
-                    checkAnswers();
-                } else {
-                    threeInputs[index + 1].focus();
-                }
+                if (index === 2) checkAnswers();
+                else threeInputs[index + 1].focus();
             }
             if (e.key === 'ArrowUp' || e.key === 'ArrowDown') {
                 e.preventDefault();
@@ -1365,13 +2339,17 @@
     });
 
     // ==============================================================
-    // ЗАПУСК
+    // ИНИЦИАЛИЗАЦИЯ
     // ==============================================================
+    setupDictionaryFilters();
+
+    currentNav = 'dict';
     currentPart = 1;
+    currentMode = 'cards';
     currentCardList = [...part1Verbs];
     currentCardIndex = 0;
     updateCard();
-    switchMode('cards');
+    switchNav('dict');
 </script>
 
 </body>
